@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header'
 import Register from './pages/auth/Register';
 import Login from './pages/auth/Login';
+import Reset from './pages/auth/Reset';
 
 
 
@@ -21,7 +22,7 @@ const App = () => {
     <Route path='/' element={<Home/>}/>
     <Route path='/' element={<Contact/>}/>
   <Route path='/login' element={<Login/>}/>
-    
+  <Route path='/reset' element={<Reset/>}/>
     <Route path='/register' element={<Register/>}/>
   </Routes>
   

@@ -17,12 +17,12 @@
   --color-primary: #194c82;
   --color-success: #28a745;
   --color-danger: orangered;
-  --wura-color:rgb(223, 104, 165);
+  
 
 }
 
 * {
-  color:rgb(223, 104, 165);
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;

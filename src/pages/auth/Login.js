@@ -1,5 +1,7 @@
-import React from 'react'
-import styles from './auth.module.scss'
+import React from 'react';
+import styles from './auth.module.scss';
+import { Link } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
 // import loginImg from '../../assets'
 const Login = () => {
   return (
@@ -12,8 +14,20 @@ const Login = () => {
     <form>
         <input type='text' placeholder='Email' required/>
         <input type='password' placeholder='password' required/>
-        <button className='--btn --btn-primary --btn-block'>Login</button>
+       
+        <div className={styles.links}>
+        <Link to="/reset">Reset Password</Link>
+              </div>
+              <p>-- or --</p>
+         
     </form>
+    <button className='--btn --btn-primary --btn-block'>
+           <FcGoogle color="#fff" /> Login With Google</button>
+
+    <span className={styles.register}>
+              <p>Don't have an account?</p>
+              <Link to="/register">Register</Link>
+            </span>
 </div>
 
     </section>

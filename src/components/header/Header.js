@@ -75,7 +75,7 @@ const  Header = () => {
               </li>
               
               <li>
-                <NavLink to="/" className={activeLink} >
+                <NavLink to="/" className={activeLink} on>
                     {/* classname={(state)=>console.log(state)} */}
                   Home
                 </NavLink>
