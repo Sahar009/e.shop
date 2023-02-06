@@ -9,7 +9,7 @@ import {FaUserCircle} from 'react-icons/fa';
 
 const logo =   (<div className={styles.logo}>
                 
- <Link to='/'>               
+ <Link to='#'>               
 <h2>
     E<span>shop</span>
 </h2>
@@ -43,11 +43,12 @@ const  Header = () => {
       setShowMenu(!showMenu)
 
     };
+ 
 
     return (
         <header>
             <div className={styles.header}>
-                    {logo}             
+                    {logo}         
                 <nav className={
               showMenu ? `${styles["show-nav"]}` : `${styles["hide-nav"]}`
             }>
