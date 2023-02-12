@@ -4,10 +4,11 @@ import {BsFillGridFill} from 'react-icons/bs';
 import {FaListAlt} from 'react-icons/fa';
 import Search from '../../search/Search';
 import ProductItem from "../productItem/ProductItem";
+import { productData } from '../productItem/productData';
 
 
 
-const ProductList = ({products}) => {
+const ProductList = () => {
     const [grid, setGrid] = useState(true);
     const [search, setSearch] = useState('');
 
@@ -36,11 +37,12 @@ const ProductList = ({products}) => {
             </div>
         </div>
         <div className={grid ? `${styles.grid}` : `${styles.list}`}>
-        {/* {products.lenght === 0 ? (
+        
+        {productData.length === 0 ? (
           <p>No product found.</p>
         ) : (
           <>
-            {Products.map((product) => {
+            {productData.map((product) => {
               return (
                 <div key={product.id}>
                   <ProductItem {...product} grid={grid} product={product} />
@@ -48,7 +50,7 @@ const ProductList = ({products}) => {
               );
             })}
           </>
-        )} */}
+        )}
         </div>
     </div>
   )

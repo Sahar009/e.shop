@@ -8,6 +8,7 @@ import Header from './components/header/Header'
 import Register from './pages/auth/Register';
 import Login from './pages/auth/Login';
 import Reset from './pages/auth/Reset';
+import ProductDetails from './components/product/productDetails/ProductDetails';
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
   <Route path='/login' element={<Login/>}/>
   <Route path='/reset' element={<Reset/>}/>
     <Route path='/register' element={<Register/>}/>
+    <Route path='/product-details/:id' element={<ProductDetails/>}/>
   </Routes>
   
   

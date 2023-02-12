@@ -2,6 +2,7 @@ import React from 'react'
 import ProductList from './productList/ProductList'
 import styles from "./Product.module.scss";
 import ProductFilter from './productFilter/ProductFilter';
+import ProductItem from './productItem/ProductItem';
 const Product = () => {
   // const products = useSelector(selectProducts);
   return (
@@ -13,6 +14,7 @@ const Product = () => {
     </aside>
     <div className={styles.content}>
       <ProductList  /> 
+    
       {/* products={products} */}
       </div>
     </div>
