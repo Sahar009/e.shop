@@ -20,30 +20,30 @@ export const productData = [
       price: "Up to 50% off on all onsale proucts.",
       desc:"Up to 50% off on all onsale proucts."
     },
-    {
-      image: "https://cdn.pixabay.com/photo/2015/08/05/09/55/mens-shoes-875950_960_720.jpg",
-      name:'shooooe tha is from america k',
-      price: "Up to 50% off on all onsale proucts.",
-      desc:"Up to 50% off on all onsale proucts."
-    },
-    {
-      image: "https://cdn.pixabay.com/photo/2015/08/05/09/55/mens-shoes-875950_960_720.jpg",
-      name:'shooooe tha is from america k',
-      price: "Up to 50% off on all onsale proucts.",
-      desc:"Up to 50% off on all onsale proucts."
-    },
-    {
-      image: "https://cdn.pixabay.com/photo/2015/08/05/09/55/mens-shoes-875950_960_720.jpg",
-      name:'shooooe tha is from america k',
-      price: "Up to 50% off on all onsale proucts.",
-      desc:"Up to 50% off on all onsale proucts."
-    },
-    {
-      image: "https://cdn.pixabay.com/photo/2015/08/05/09/55/mens-shoes-875950_960_720.jpg",
-      name:'shooooe tha is from america k',
-      price: "Up to 50% off on all onsale proucts.",
-      desc:"Up to 50% off on all onsale proucts."
-    },
+    // {
+    //   image: "https://cdn.pixabay.com/photo/2015/08/05/09/55/mens-shoes-875950_960_720.jpg",
+    //   name:'shooooe tha is from america k',
+    //   price: "Up to 50% off on all onsale proucts.",
+    //   desc:"Up to 50% off on all onsale proucts."
+    // },
+    // {
+    //   image: "https://cdn.pixabay.com/photo/2015/08/05/09/55/mens-shoes-875950_960_720.jpg",
+    //   name:'shooooe tha is from america k',
+    //   price: "Up to 50% off on all onsale proucts.",
+    //   desc:"Up to 50% off on all onsale proucts."
+    // },
+    // {
+    //   image: "https://cdn.pixabay.com/photo/2015/08/05/09/55/mens-shoes-875950_960_720.jpg",
+    //   name:'shooooe tha is from america k',
+    //   price: "Up to 50% off on all onsale proucts.",
+    //   desc:"Up to 50% off on all onsale proucts."
+    // },
+    // {
+    //   image: "https://cdn.pixabay.com/photo/2015/08/05/09/55/mens-shoes-875950_960_720.jpg",
+    //   name:'shooooe tha is from america k',
+    //   price: "Up to 50% off on all onsale proucts.",
+    //   desc:"Up to 50% off on all onsale proucts."
+    // },
  
    
   ];

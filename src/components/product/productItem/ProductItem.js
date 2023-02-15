@@ -4,7 +4,6 @@ import styles from './ProductItem.module.scss';
 import {Link} from 'react-router-dom'
 import {productData} from './productData';
 
-
 const ProductItem = () => {
   const shortenText = (text,n) => {
     if (text.length> n){
@@ -14,14 +13,13 @@ const ProductItem = () => {
     return text
   }
   return (
-    <Card cardClass={styles.grid}>
-      {productData.map((product,id) => {
-        
+    <>
+      {productData.map((product) => {
         return(
-                <Card cardClass={styles.grid} key={id}>
-            <Link to={`/product-details/${id}`}>
-              <div className={styles.img} >
-                <img src={product.image} alt={product.name} key={id}/>
+          <Card cardClass={styles.grid}>
+            <Link to={`/product-details/${product.id}`}>
+              <div className={styles.img}>
+                <img src={product.image} alt={product.name} />
               </div>
             </Link>
             <div className={styles.content}>
@@ -34,10 +32,10 @@ const ProductItem = () => {
                 Add To Cart
               </button>
             </div>
-            </Card>
+          </Card>
         )
       })}
-    </Card>
+    </>
   )
 }
 
