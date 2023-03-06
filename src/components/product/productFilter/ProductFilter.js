@@ -1,16 +1,22 @@
 import React from 'react';
+import Card from '../../card/Card';
 import styles from "./ProductFilter.module.scss";
 
 const ProductFilter = () => {
   return (
+  
     <div className={styles.filter}>
       <h4>Categories</h4>
       <div className={styles.category}>
       </div>
       <h4>Brand</h4>
       <div className={styles.brand}>
-        <select value='all'>
-         All
+        
+        <select name='brand'>
+          <option value='all'>
+          All
+          </option>
+         
         </select>
         <h4>Price</h4>
         <p>7000</p>
@@ -28,6 +34,7 @@ const ProductFilter = () => {
         </button>
       </div>
     </div>
+    
   )
 }
 

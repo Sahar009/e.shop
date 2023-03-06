@@ -9,7 +9,8 @@ import Register from './pages/auth/Register';
 import Login from './pages/auth/Login';
 import Reset from './pages/auth/Reset';
 import ProductDetails from './components/product/productDetails/ProductDetails';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
   return (
   <>
   <BrowserRouter>
+  <ToastContainer/>
   <Header/>
   <Routes>
     <Route path='/' element={<Home/>}/>

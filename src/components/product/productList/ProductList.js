@@ -1,16 +1,24 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import styles from './ProductList.module.scss';
 import {BsFillGridFill} from 'react-icons/bs';
 import {FaListAlt} from 'react-icons/fa';
 import Search from '../../search/Search';
 import ProductItem from "../productItem/ProductItem";
 import { productData } from '../productItem/productData';
+import { useDispatch, useSelector } from "react-redux";
+import { FILTER_BY_SEARCH,selectFilteredProducts } from '../../../redux/filterSlice/filterSlice';
 
 
-
-const ProductList = () => {
+// productData
+const ProductList = ({products}) => {
     const [grid, setGrid] = useState(true);
     const [search, setSearch] = useState('');
+    const dispatch = useDispatch();
+  // const filteredProducts = useSelector(selectFilteredProducts)
+
+  //   useEffect (() =>  {
+  //       dispatch(FILTER_BY_SEARCH({productData,search}))
+  //   },[dispatch, productData,search]);
 
   return (
     <div className={styles['product-list']} id='product'>
@@ -19,6 +27,7 @@ const ProductList = () => {
                 <BsFillGridFill size={22} color='orangered' onClick={() => setGrid(true)}/>
                 <FaListAlt size={24} color='#00066d4' onClick={() => setGrid(false)}/>
            <p><b>10</b> Products found.</p>
+           {/* {filteredProducts.length} */}
             </div>
             {/* search icon */}
             <div>
@@ -36,24 +45,31 @@ const ProductList = () => {
                </select>
             </div>
         </div>
-        <div className={grid ? `${styles.grid}` : `${styles.list}`}>
+       {/* commented */}
+    <div className={grid ? `${styles.grid}` : `${styles.list}`}>
         
-        {productData.length === 0 ? (
-          <p>No product found.</p>
-        ) : (
-          <>
-            {productData.map((product) => {
-              return (
-                <div key={product.id}>
-                  <ProductItem {...product} grid={grid} product={product} />
-                </div>
-              );
-            })}
-          </>
-        )}
-        </div>
+{/* {productData.length === 0 ? (
+  <p>No product found.</p>
+) : ( */}
+  <>
+  {/* //filteredProducts */}
+  {productData.map((product) => {
+   return (
+      <div key={product.id}>
+         <ProductItem {...product} grid={grid} product={product} />
+     </div>
+      );
+    }
+  
+  
+)}
+</>
+
+</div>
     </div>
   )
 }
 
 export default ProductList
+
+
